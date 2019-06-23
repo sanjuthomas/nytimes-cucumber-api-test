@@ -1,7 +1,7 @@
 Feature: New York Times Book API
 
   Scenario: List all book categories
-    Given a api key "CUArAjKZBk7HHjwAHXqtcztIXXehZeNG"
+    Given a api key "<<get your api key>>"
     When a user list book category using api "https://api.nytimes.com/svc/books/v3/lists/names" in the format "json"
     Then the status code is 200
     And response includes the following
