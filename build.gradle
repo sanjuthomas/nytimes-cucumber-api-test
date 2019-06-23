@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.sanjuthomas'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile "info.cukes:cucumber-java8:1.2.5"
+    testCompile "info.cukes:cucumber-junit:1.2.5"
+    testCompile "io.rest-assured:rest-assured:4.0.0"
+    testComplie "io.rest-assured:json-path:4.0.0"
+}
